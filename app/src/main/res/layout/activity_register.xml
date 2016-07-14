@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+        <!-- Registration Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="40dip"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_marginTop="20dip"
+                android:singleLine="true"
+                android:text="@string/All_the"
+                android:layout_marginBottom="20dip"
+                android:layout_weight="0.09"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/colourRed"/>
+            <!-- User Name Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:layout_toRightOf="@+id/Username"
+                android:textColor="@color/colourRed" />
+            <EditText android:id="@+id/Username"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:hint="@string/username"
+                android:layout_marginBottom="20dip"/>
+            <!--  password Label -->
+            <EditText android:id="@+id/password"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:hint="@string/password"
+                android:textColor="@color/colourBlack"
+                android:layout_marginBottom="20dip"/>
+            <!-- Mobile number Label -->
+            <EditText android:id="@+id/mobile_number"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:hint="@string/mobile"
+                android:textColor="@color/colourBlack"
+                android:layout_marginBottom="20dip"/>
+
+            <EditText
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:hint="@string/email"
+                android:textColor="@color/colourBlack"
+                android:layout_marginBottom="20dip"/>
+            <EditText android:id="@+id/address"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:hint="@string/address"
+                android:textColor="@color/colourBlack"
+                android:layout_marginBottom="20dip"/>
+            <!-- Register Button -->
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_box"
+                android:checked="false" />
+
+            <Button android:id="@+id/btnRegister"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="@string/register"
+                android:textColor="@color/colourBluefent"
+                android:layout_gravity="center"/>
+            <!-- Link to Login Screen -->
+            <TextView android:id="@+id/link_to_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:layout_marginBottom="40dip"
+                android:text="@string/allredy"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/colourBluefent"/>
+
+        </LinearLayout>
+        <!-- Registration Form Ends -->
+</ScrollView>

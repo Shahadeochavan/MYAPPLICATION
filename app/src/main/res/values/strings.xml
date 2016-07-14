@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MYSCHOOL</string>
+    <string name="welcome">Welcome</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="All_the">All the fields marked with * are mandatory</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="address">Address</string>
+    <string name="check_box">I Accept Terms &amp; Conditinons *</string>
+    <string name="allredy">Already has account!Login here</string>
+    <string name="check_connection">Please check internet connection of your device</string>
+    <string name="connectivity">Connectivity</string>
+    <string name="settings">SETTINGS</string>
+    <string name="ok">OK</string>
+    <string name="hellouser">Hello User Name</string>
+    <string name="logintime">Last Login Time:Monday,12 july 2016</string>
+</resources>
