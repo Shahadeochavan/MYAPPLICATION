@@ -1,39 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/txt_user_name"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingLeft="32dp"
         android:text="@string/hellouser"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="100dp"
-        android:paddingRight="100dp"
-        android:paddingBottom="25dp"
-        android:paddingTop="25dp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/text_border"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+       android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/txt_user_name"
+        android:text="@string/loginDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:background="@drawable/text_border"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+
+
+
+<View
+    android:layout_above="@+id/LinearLayoutBottom"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/black">
+
+</View>
+    <LinearLayout
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:id="@+id/LinearLayoutBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/logintime"
-       android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:paddingRight="20dp"
-        android:layout_margin="50dp"
-        android:textSize="@dimen/sizeof"/>
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_action_home"/>
+        <ImageView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_content_sort"/>
+        <ImageView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_communication_location_on"/>
+    </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="306dp"
-        android:layout_height="178dp"
-        android:padding="300dp"
-        android:layout_gravity="center_horizontal">
-    </FrameLayout>
-    <ImageView
-        android:layout_width="51dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"/>
 
 
-</LinearLayout>
+</RelativeLayout>

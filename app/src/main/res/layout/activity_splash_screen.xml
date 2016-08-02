@@ -6,8 +6,8 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:textColor="#854545"
+        android:textSize="30sp"
+       android:textColor="@color/colourBrown"
         android:gravity="center_horizontal"
         android:text="@string/welcome"
         android:layout_centerVertical="true"/>

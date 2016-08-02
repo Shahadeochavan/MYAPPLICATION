@@ -15,74 +15,160 @@
             android:weightSum="1">
 
             <TextView
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
                 android:layout_width="wrap_content"
-                android:layout_height="10dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dip"
-                android:singleLine="true"
                 android:text="@string/All_the"
-                android:layout_marginBottom="20dip"
-                android:layout_weight="0.09"
+                android:layout_marginBottom="30dip"
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:textColor="@color/colourRed"/>
             <!-- User Name Label -->
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="*"
-                android:layout_toRightOf="@+id/Username"
-                android:textColor="@color/colourRed" />
-            <EditText android:id="@+id/Username"
-                android:layout_width="324dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
-                android:singleLine="true"
-                android:hint="@string/username"
-                android:layout_marginBottom="20dip"/>
+                android:orientation="horizontal">
+
+                <!--android:drawableLeft="@android:drawable/btn_star"-->
+                <EditText
+                    android:id="@+id/registerName"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:background="@drawable/text_border"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/username"
+                    android:layout_marginBottom="20dp"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="20"
+                    android:id="@+id/username_star"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/star"
+                    android:textColor="@color/colourRed"/>
+            </LinearLayout>
             <!--  password Label -->
-            <EditText android:id="@+id/password"
-                android:layout_width="324dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <EditText
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:background="@drawable/text_border"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dip"
-                android:singleLine="true"
                 android:hint="@string/password"
                 android:textColor="@color/colourBlack"
                 android:layout_marginBottom="20dip"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/star"
+            android:textColor="@color/colourRed"/>
+    </LinearLayout>
             <!-- Mobile number Label -->
-            <EditText android:id="@+id/mobile_number"
-                android:layout_width="324dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:background="@drawable/text_border"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dip"
-                android:singleLine="true"
                 android:hint="@string/mobile"
                 android:textColor="@color/colourBlack"
                 android:layout_marginBottom="20dip"/>
-
+        <TextView
+            android:gravity="center"
+            android:layout_weight="20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/star"
+            android:textColor="@color/colourRed"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
             <EditText
-                android:layout_width="324dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:background="@drawable/text_border"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dip"
                 android:singleLine="true"
                 android:hint="@string/email"
                 android:textColor="@color/colourBlack"
                 android:layout_marginBottom="20dip"/>
-            <EditText android:id="@+id/address"
-                android:layout_width="324dp"
+        <TextView
+            android:gravity="center"
+            android:layout_weight="20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/star"
+            android:textColor="@color/colourRed"/>
+        </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/address"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:background="@drawable/text_border"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dip"
                 android:singleLine="true"
                 android:hint="@string/address"
                 android:textColor="@color/colourBlack"
                 android:layout_marginBottom="20dip"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/star"
+                    android:textColor="@color/colourRed" />
+            </LinearLayout>
             <!-- Register Button -->
+            <TextView
+                android:id="@+id/register_error"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dip"
+                android:textColor="#e30000"
+                android:textStyle="bold" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/check_box"
                 android:checked="false" />
 
-            <Button android:id="@+id/btnRegister"
-                android:layout_width="150dp"
+            <Button
+
+                android:background="@drawable/text_border"
+                android:id="@+id/btnRegister"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dip"
                 android:text="@string/register"

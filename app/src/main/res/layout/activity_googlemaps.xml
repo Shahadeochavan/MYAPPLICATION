@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/google_maps"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/sizeof"
+        android:textColor="@color/colourRed"/>
+    <View
+        android:layout_above="@+id/LinearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black">
+
+    </View>
+    <LinearLayout
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/LinearLayoutBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_action_home"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_content_sort"
+            android:layout_marginLeft="16dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_communication_location_on"
+            android:layout_marginLeft="16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

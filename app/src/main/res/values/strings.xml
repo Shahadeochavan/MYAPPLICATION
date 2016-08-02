@@ -17,4 +17,14 @@
     <string name="ok">OK</string>
     <string name="hellouser">Hello User Name</string>
     <string name="logintime">Last Login Time:Monday,12 july 2016</string>
+    <string name="star">*</string>
+    <string name="loginDate">Last Login Time: Monday,12 July 2016</string>
+    <string name="google_maps">GOOGLE MAPS</string>
+    <string name="_9898989898">9898989898</string>
+    <string name="error_message_username">Please enter your username</string>
+    <string name="error_message_password">Please enter your password</string>
+    <string name="erorr_message_mobile_number">Please enter your mobile number</string>
+    <string name="error_message_email">Please enter your email address</string>
+    <string name="error_message_address">Please enter your Address</string>
+    <string name="addres_name">address_name</string>
 </resources>

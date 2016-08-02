@@ -5,7 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import login.myschool.nextech.com.myschool.Login;
+import com.nextech.myschool.R;
+import com.nextech.myschool.login.Login;
 
 /**
  * Created by welcome on 7/12/2016.

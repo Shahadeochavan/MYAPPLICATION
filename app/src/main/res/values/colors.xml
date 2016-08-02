@@ -6,4 +6,14 @@
     <color name="colourRed">#FF0000</color>
     <color name="colourBlack">#372c24</color>
     <color name="colourBluefent">#025f7c</color>
+    <color name="colourBrown">#854545</color>
+    <color name="PrimaryColor">#2196F3</color>
+    <color name="colourBlue">#03A9f4</color>
+    <color name="PrimaryDarkColor">#1976D2</color>
+    <color name="indicator">#ecd95a</color>
+    <color name="colorPrimary1">#125688</color>
+    <color name="colorPrimaryDark1">#125688</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="navigationBarColor1">#000000</color>
+    <color name="colorAccent1">#c8e8ff</color>
 </resources>
