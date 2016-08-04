@@ -27,4 +27,7 @@
     <string name="error_message_email">Please enter your email address</string>
     <string name="error_message_address">Please enter your Address</string>
     <string name="addres_name">address_name</string>
+    <string name="home">Home Pages</string>
+    <string name="contact_name">contact_name</string>
+    <string name="image">phone image</string>
 </resources>

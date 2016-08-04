@@ -3,6 +3,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import com.nextech.myschool.SQLite.UserListMyschool;
+
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
     int mNumOfTabs;
@@ -24,6 +26,9 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
             case 2:
                 Map locationIcon = new Map();
                 return locationIcon;
+            case 3:
+                UserListMyschool userListMyschool=new UserListMyschool();
+                return userListMyschool;
             default:
                 return null;
         }

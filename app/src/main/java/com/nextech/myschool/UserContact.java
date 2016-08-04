@@ -3,20 +3,27 @@ package com.nextech.myschool;
 /**
  * Created by welcome on 7/22/2016.
  */
-public class UserContact {
+public class UserContact  {
     private String name;
     private  String number;
-    private String image;
-
-    public String getImage() {
-        return image;
+    private int Id;
+    public UserContact(int Id,String name,String number){
+        this.Id=Id;
+        this.name=name;
+        this.number=number;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public UserContact() {
+
     }
 
+    public int getId() {
+        return Id;
+    }
 
+    public void setId(int id) {
+        Id = id;
+    }
 
     public String getNumber() {
         return number;

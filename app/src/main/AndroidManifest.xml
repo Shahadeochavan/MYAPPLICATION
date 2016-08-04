@@ -42,7 +42,6 @@
         <activity
             android:name=".login.Login"
             android:label="@string/app_name" />
-        <activity android:name="com.nextech.myschool.register.UserList" />
         <activity
             android:name=".register.Register"
             android:label="@string/app_name" />

@@ -31,7 +31,7 @@ public class Map extends Fragment implements OnMapReadyCallback,GoogleApiClient.
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // inflate and return the layout
-        View v = inflater.inflate(R.layout.fragment_location_icon, container,
+        View v = inflater.inflate(R.layout.fragment_map, container,
                 false);
         getFragmentManager().findFragmentById(R.id.map);
         SupportMapFragment mapFragment;
@@ -79,7 +79,21 @@ public class Map extends Fragment implements OnMapReadyCallback,GoogleApiClient.
         mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(18.5204, 73.8567))
                 .title("Marker"));
-        mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(19.0760, 72.8777))
+                .title("Marker"));
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(18.9220, 75.8069))
+                .title("Marker"));
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(19.8762, 75.3433))
+                .title("Marker"));
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(22.5726, 88.3639))
+                .title("Marker"));
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(19.7515, 75.7139))
+                .title("Marker"));
         //Initialize Google Play Services
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (ContextCompat.checkSelfPermission(getContext(),

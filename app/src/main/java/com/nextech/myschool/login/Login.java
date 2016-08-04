@@ -6,10 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.nextech.myschool.register.Register;
 import com.nextech.myschool.R;
+import com.nextech.myschool.TabLayoutActivity;
+import com.nextech.myschool.register.Register;
+
 public class Login extends AppCompatActivity {
-    @Override
+ @Override
         public void onCreate(Bundle savedInstanceState) {
                super.onCreate(savedInstanceState);
                 // setting default screen to login.xml
@@ -26,5 +28,13 @@ public class Login extends AppCompatActivity {
                                                 startActivity(intent);
                                            }
                                    });
+     TextView login=(TextView)findViewById(R.id.btnLogin);
+     login.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+             Intent intent=new Intent(getApplicationContext(),TabLayoutActivity.class);
+             startActivity(intent);
+         }
+     });
             }
     }

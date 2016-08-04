@@ -9,11 +9,12 @@ public class TabLayoutActivity extends AppCompatActivity implements TabLayout.On
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tablayout);
         tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_action_action_home));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_action_content_sort));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_action_communication_location_on));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_action_editor_border_color));
 
         //Initializing viewPager
         viewPager = (ViewPager) findViewById(R.id.viewpager);

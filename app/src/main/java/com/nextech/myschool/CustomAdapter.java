@@ -41,7 +41,7 @@ public class CustomAdapter extends BaseAdapter{
         // TODO Auto-generated method stub
         ViewHolder holder;
         if(convertView == null){
-            convertView = mInflater.inflate(R.layout.fragment_user_icon, null);
+            convertView = mInflater.inflate(R.layout.fragment_user_list, null);
             holder = new ViewHolder();
             holder.txtname = (TextView) convertView.findViewById(R.id.contact_name);
             holder.txtphone = (TextView) convertView.findViewById(R.id.phone_number);

@@ -35,7 +35,7 @@
 
                 <!--android:drawableLeft="@android:drawable/btn_star"-->
                 <EditText
-                    android:id="@+id/registerName"
+                    android:id="@+id/edtUsername"
                     android:layout_weight="1"
                     android:padding="8dp"
                     android:background="@drawable/text_border"
@@ -59,15 +59,16 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
             <EditText
+                android:id="@+id/edtpass"
                 android:layout_weight="1"
                 android:padding="8dp"
                 android:background="@drawable/text_border"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
+                android:layout_marginTop="5dp"
                 android:hint="@string/password"
                 android:textColor="@color/colourBlack"
-                android:layout_marginBottom="20dip"/>
+                android:layout_marginBottom="20dp"/>
         <TextView
             android:gravity="center"
             android:layout_weight="20"
@@ -82,7 +83,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
             <EditText
-                android:id="@+id/mobile"
+                android:id="@+id/edtMobile"
                 android:layout_weight="1"
                 android:padding="8dp"
                 android:background="@drawable/text_border"
@@ -105,6 +106,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
             <EditText
+                android:id="@+id/emai"
                 android:layout_weight="1"
                 android:padding="8dp"
                 android:background="@drawable/text_border"
@@ -128,7 +130,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             <EditText
-                android:id="@+id/address"
+
+                android:id="@+id/edtAddress"
                 android:layout_weight="1"
                 android:padding="8dp"
                 android:background="@drawable/text_border"
