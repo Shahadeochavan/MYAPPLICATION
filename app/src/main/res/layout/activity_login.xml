@@ -3,14 +3,17 @@
         <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:padding="40dip"
-            android:layout_marginTop="100dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/PrimaryColor"
+        android:layout_marginBottom="60dp"/>
             <!--  Email Label -->
             <!--  Password Label -->
             <!-- Login button -->
-
             <EditText
                 android:id="@+id/input_username"
                 android:padding="8dp"
@@ -19,12 +22,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dip"
                 android:layout_marginBottom="20dip"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
                 android:hint="@string/username"/>
             <EditText
                 android:padding="8dp"
                 android:background="@drawable/text_border"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
                 android:layout_marginTop="5dip"
                 android:layout_marginBottom="20dip"
                 android:hint="@string/password"/>
@@ -32,8 +39,8 @@
                 <Button
                     android:textColor="@color/colourBluefent"
                 android:background="@drawable/text_border"
-                android:layout_marginLeft="32dp"
-                android:layout_marginRight="32dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="52dp"
                 android:id="@+id/btnLogin"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -44,14 +51,13 @@
             <Button
                 android:textColor="@color/colourBluefent"
                 android:background="@drawable/text_border"
-                android:layout_marginLeft="32dp"
-                android:layout_marginRight="32dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="52dp"
                 android:id="@+id/btnRegister"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dip"
                 android:layout_gravity="center"
                 android:text="@string/register"/>
-
 </LinearLayout>
         <!-- Login Form Ends -->

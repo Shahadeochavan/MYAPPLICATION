@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Created by welcome on 8/4/2016.
  */
-public class UserListMyschool extends Fragment implements View.OnClickListener {
+public class UserListMyschool extends Fragment  {
     public UserListMyschool() {
     }
 
@@ -36,11 +36,6 @@ public class UserListMyschool extends Fragment implements View.OnClickListener {
             Log.d("UserContact: : ", log);
         }
         return rootView;
-
-    }
-
-    @Override
-    public void onClick(View v) {
 
     }
 }

@@ -46,10 +46,10 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(COLUMN_FIRST_NAME, userContact.getName());
-        values.put(COLUMN_MOBILE, userContact.getNumber());
         long count = db.insert(TABLE_NAME,null,values);
         Log.d("Database","Count of insert : " + count);
         db.close();
+        values.put(COLUMN_MOBILE, userContact.getNumber());
     }
 
     public UserContact getUserContact(int id) {
