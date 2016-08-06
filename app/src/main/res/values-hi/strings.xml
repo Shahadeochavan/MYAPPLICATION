@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="welcome">स्वागतम</string>
-    <string name="username">ईमेल पता</string>
-    <string name="password">पासवर्ड</string>
-    <string name="login">लॉगिन</string>
-    <string name="register">खाता नहीं है? साइन अप करें</string>
-    <string name="actins_hn">Hindi</string>
-    <string-array name="lang_select">
-
-        <item>English</item>
-        <item>Hindi</item>
-    </string-array>
+      <string name="welcome">स्वागतम</string>
+       <string name="username">ईमेल पता</string>
+       <string name="password">पासवर्ड</string>
+      <string name="login">लॉगिन</string>
+      <string name="register">खाता नहीं है? साइन अप करें</string>
+       <string name="actins_hn">Hindi</string>
+       <string-array name="lang_select">
+           <item>English</item>
+            <item>Hindi</item>
+       </string-array>
 </resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">स्वागत</string>
+    <string name="username">ईमेल पता</string>
+    <string name="password">पासवर्ड</string>
+    <string name="login">लॉगिन</string>
+    <string name="register">आपल खात नाही ? नविन खाता खोला</string>
+    <string name="actins_mr">marathi</string>
+    <string-array name="lang_select">
+        <item>English</item>
+        <item>Hindi</item>
+    </string-array>
+</resources>

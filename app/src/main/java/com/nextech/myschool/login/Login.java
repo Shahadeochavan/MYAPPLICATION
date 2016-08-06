@@ -60,7 +60,17 @@ public class Login extends AppCompatActivity {
                 getBaseContext().getResources().updateConfiguration(config,
                         getBaseContext().getResources().getDisplayMetrics());
                 this.setContentView(R.layout.activity_login);
-                return true;
+                break;
+            case R.id.actins_mr:
+                languageToLoad = "mr"; // your language
+                locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+                this.setContentView(R.layout.activity_login);
+                break;
             case R.id.actins_hn:
                 languageToLoad = "hi"; // your language
                 locale = new Locale(languageToLoad);
@@ -70,74 +80,34 @@ public class Login extends AppCompatActivity {
                 getBaseContext().getResources().updateConfiguration(config,
                         getBaseContext().getResources().getDisplayMetrics());
                 this.setContentView(R.layout.activity_login);
-                return true;
-
+               break;
+            case R.id.actins_fr:
+                languageToLoad = "fr"; // your language
+                locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+                this.setContentView(R.layout.activity_login);
+                break;
+            case R.id.actins_es:
+                languageToLoad = "es"; // your language
+                locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+                this.setContentView(R.layout.activity_login);
+              break;
             default:
+                break;
                 // If we got here, the user's action was not recognized.
                 // Invoke the superclass to handle it.
-                return super.onOptionsItemSelected( item );
 
         }
+        return super.onOptionsItemSelected( item );
+
     }
 }
-
-/*
-
-   @Override
-     public boolean onCreateOptionsMenu(Menu menu) {
-         MenuInflater inflater = getMenuInflater();
-         inflater.inflate(R.menu.menu_main, menu);
-         return super.onCreateOptionsMenu(menu);
-     }
-     @Override
-     public boolean onOptionsItemSelected(MenuItem item) {
-         switch (item.getItemId()) {
-             case R.id.eng:
-                 String languageToLoad = "en"; // your language
-                 Locale locale = new Locale(languageToLoad);
-                 Locale.setDefault(locale);
-                 Configuration config = new Configuration();
-                 config.locale = locale;
-                 getBaseContext().getResources().updateConfiguration(config,
-                         getBaseContext().getResources().getDisplayMetrics());
-                 this.setContentView(R.layout.activity_login);
-                 break;
-             case R.id.hn:
-                 languageToLoad = "hi"; // your language
-                 locale = new Locale(languageToLoad);
-                 Locale.setDefault(locale);
-                 config = new Configuration();
-                 config.locale = locale;
-                 getBaseContext().getResources().updateConfiguration(config,
-                         getBaseContext().getResources().getDisplayMetrics());
-                 this.setContentView(R.layout.activity_login);
-                 break;
-             case R.id.fr:
-                 languageToLoad = "fr"; // your language
-                 locale = new Locale(languageToLoad);
-                 Locale.setDefault(locale);
-                 config = new Configuration();
-                 config.locale = locale;
-                 getBaseContext().getResources().updateConfiguration(config,
-                         getBaseContext().getResources().getDisplayMetrics());
-                 this.setContentView(R.layout.activity_login);
-                 break;
-             case R.id.de:
-                 languageToLoad = "de"; // your language
-                 locale = new Locale(languageToLoad);
-                 Locale.setDefault(locale);
-                 config = new Configuration();
-                 config.locale = locale;
-                 getBaseContext().getResources().updateConfiguration(config,
-                         getBaseContext().getResources().getDisplayMetrics());
-                 this.setContentView(R.layout.activity_login);
-                 break;
-             default:
-                 break;
-         }
-         return super.onOptionsItemSelected(item);
-     }
- }
-
-
-*/

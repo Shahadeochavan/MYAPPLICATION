@@ -78,22 +78,25 @@ public class Map extends Fragment implements OnMapReadyCallback,GoogleApiClient.
         mMap=googleMap;
         mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(18.5204, 73.8567))
-                .title("Marker"));
+                .title("PUNE")
+                 .snippet("Population: 4,137,400"));
+
         mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(19.0760, 72.8777))
-                .title("Marker"));
+                .title("MUMBAI"));
         mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(18.9220, 75.8069))
-                .title("Marker"));
+                .title("Beed"));
         mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(19.8762, 75.3433))
-                .title("Marker"));
+                .title("Aurangabad"));
         mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(22.5726, 88.3639))
-                .title("Marker"));
+                .title(" kolkata"));
         mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(19.7515, 75.7139))
-                .title("Marker"));
+                .title("Maharashtra"));
+
         //Initialize Google Play Services
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (ContextCompat.checkSelfPermission(getContext(),

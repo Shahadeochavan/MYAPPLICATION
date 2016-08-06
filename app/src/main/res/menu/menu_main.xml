@@ -4,8 +4,20 @@
       tools:context="hello.nextech.com.helloworld.Main">
     <item android:id="@+id/action_settings"
           android:title="@string/action_settings"
-          app:showAsAction="ifRoom"/>
-    <item android:id="@+id/actins_hn"
-    android:title="@string/actins_hn"
-    app:showAsAction="ifRoom"/>
+          app:showAsAction="ifRoom">
+    <menu>
+        <item android:id="@+id/actins_mr"
+              android:title="@string/actins_mr"
+              app:showAsAction="ifRoom"/>
+        <item android:id="@+id/actins_hn"
+              android:title="@string/actins_hn"
+              app:showAsAction="ifRoom"/>
+        <item android:id="@+id/actins_fr"
+              android:title="@string/actins_fr"
+              app:showAsAction="ifRoom"/>
+        <item android:id="@+id/actins_es"
+              android:title="@string/actins_es"
+              app:showAsAction="ifRoom"/>
+    </menu>
+    </item>
 </menu>

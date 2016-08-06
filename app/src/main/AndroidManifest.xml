@@ -50,6 +50,14 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDQW5d-bLV0LajLoXyuR9KZBkSQHoLMhks" />
+        <receiver
+            android:name="com.nextech.myschool.internetconnection.NetworkChangeReceiverMyschool"
+            android:label="NetworkChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
